@@ -9,7 +9,7 @@ function toDoList(){
 
 
 toDoList.prototype = {
-  retrieve: function(){
+  showList: function(){
       return this._list;
   },
   store: function(taskName){

@@ -9,6 +9,9 @@ Task.prototype = {
   },
   name: function(){
     return this._name;
+  },
+  finish: function(){
+    return this._completed = true
   }
  };
 
