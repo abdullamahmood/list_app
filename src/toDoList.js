@@ -3,20 +3,20 @@ var Task = require('./task');
 task = new Task()
 
 
-function ToDoList(){
+function toDoList(){
   this._list = []
 };
 
 
-ToDoList.prototype = {
+toDoList.prototype = {
   retrieve: function(){
       return this._list;
   },
   store: function(taskName){
-    task1 = new Task(taskName)
-    this._list.push(task1);
+    task = new Task(taskName)
+    this._list.push(task);
   }
 };
 
 
-module.exports = ToDoList
+module.exports = toDoList
