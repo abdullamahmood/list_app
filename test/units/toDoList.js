@@ -28,7 +28,7 @@ describe('toDoList', function(){
     });
   });
 
-  describe('#retrieve', function(){
+  describe('#finishTask', function(){
 
   });
 });
