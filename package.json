@@ -1,0 +1,26 @@
+{
+  "name": "list_app",
+  "version": "1.0.0",
+  "description": "A todo list",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdullamahmood/list_app.git"
+  },
+  "author": "Abdulla Mahmood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdullamahmood/list_app/issues"
+  },
+  "homepage": "https://github.com/abdullamahmood/list_app#readme"
+}
