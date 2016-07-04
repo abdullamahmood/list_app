@@ -10,21 +10,12 @@ function ToDoList(){
 
 ToDoList.prototype = {
   retrieve: function(){
-    return this._list.forEach(getNames);
-    function getNames(element, index, array) {
-      console.log('============1')
-      console.log(element.name())
-    }
+      return this._list;
   },
-
   store: function(taskName){
     task1 = new Task(taskName)
     this._list.push(task1);
   }
-
-  // complete: function(task){
-  //
-  // }
 };
 
 

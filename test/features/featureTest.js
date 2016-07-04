@@ -20,20 +20,17 @@ describe('ToDoList', function(){
     toDoList = new ToDoList();
   });
 
-// I would like to view a task
+// I would like to view tasks
 
   it('can be retrieved', function(){
-    console.log('============2')
-    console.log(toDoList.retrieve())
     expect(toDoList.retrieve()).to.eql([]);
   });
 
-// I would like to store and retrieve a task
+// I would like to store a task with a name
 
   it('stores and retreives tasks', function(){
     toDoList.store('go shopping')
-    console.log(toDoList.retrieve())
-    expect(toDoList.retrieve()).to.eql(['go shopping']);
+    expect(toDoList.retrieve()[0].name()).to.eql('go shopping');
   });
 
   // I would like to change the status of the task to completed
