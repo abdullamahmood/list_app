@@ -39,12 +39,13 @@ describe('ToDoList', function(){
     task.finish()
     expect(toDoList.retrieve()[0].completed()).to.eql(true);
   });
-  // I would like to change the status of the task to completed
-  //
-  // it ('changes the status of the task to completed', function(){
-  //   toDoList.complete('task1')
-  //   expect(toDoList.('task1')).to.eql('completed')
-  // });
+
+  it('can convert a task to html', function(){
+    toDoList.store(task)
+    expect(toDoList.toHTML()).to.include('<ul>\n<li><div>go shopping</div></li>\n</ul>')
+  });
+
+
 
 
 
