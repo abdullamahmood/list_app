@@ -5,16 +5,21 @@
   "main": "index.js",
   "dependencies": {
     "chai": "^3.5.0",
+    "http-server": "^0.9.0",
     "mustache": "^2.2.1",
-    "sinon": "^1.17.4"
+    "sinon": "^1.17.4",
+    "zombie": "^4.2.1"
   },
   "devDependencies": {
+    "http-server": "^0.9.0",
     "mocha": "^2.5.3",
-    "mustache": "^2.2.1"
+    "mustache": "^2.2.1",
+    "zombie": "^4.2.1"
   },
   "scripts": {
     "test": "mocha --recursive",
-    "build": "mustache dataView.json myTemplate.mustache > public/output.html"
+    "build": "mustache dataView.json myTemplate.mustache > public/output.html",
+    "server": "node node_modules/http-server/bin/http-server"
   },
   "repository": {
     "type": "git",
