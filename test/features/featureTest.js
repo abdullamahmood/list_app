@@ -27,7 +27,7 @@ describe('ToDoList', function(){
 
   it ('changes the status of the task to completed', function(){
     toDoList.finishTask('hello world')
-    expect(toDoList.retrieve('task1')).to.eql('completed');
+    expect(toDoList.showList('task1')).to.eql('completed');
   });
 
 // I would like to check the status
