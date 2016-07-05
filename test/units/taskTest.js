@@ -6,7 +6,7 @@ describe('Task', function(){
 
 
   beforeEach(function(){
-    task = new Task('Ben');
+    task = new Task('go shopping');
   });
 
   it('is false by default', function(){
@@ -14,6 +14,11 @@ describe('Task', function(){
   });
 
   it('has a name', function(){
-    expect(task.name()).to.eql('Ben')
-  })
+    expect(task.name()).to.eql('go shopping')
+  });
+
+  it('the task can be completed', function(){
+    task.finish()
+    expect(task.completed()).to.eql(true)
+  });
 });

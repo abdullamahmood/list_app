@@ -1,7 +1,5 @@
 var Task = require('./task');
 
-task = new Task()
-
 
 function ToDoList(){
   this._list = []
@@ -10,21 +8,12 @@ function ToDoList(){
 
 ToDoList.prototype = {
   retrieve: function(){
-    return this._list.forEach(getNames);
-    function getNames(element, index, array) {
-      console.log('============1')
-      console.log(element.name())
-    }
+    return this._list
   },
 
-  store: function(taskName){
-    task1 = new Task(taskName)
-    this._list.push(task1);
+  store: function(taskObject){
+    this._list.push(taskObject);
   }
-
-  // complete: function(task){
-  //
-  // }
 };
 
 
