@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>To Do List</title>
+    <script src="src/task.js"></script>
+    <script src="src/toDoList.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
-    <form>
-    </form>
+
+      <form id='form' action="/task/new" method="post">
+       <label for="task">Task:</label>
+       <input id="task-input" type="text" name="task">
+       <input id="submit" type="submit" value="Add to list">
+      </form>
+
+    <div id='list'></div>
+
 
   </body>
+
 </html>

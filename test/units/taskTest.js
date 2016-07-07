@@ -1,6 +1,8 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var Task = require('../../src/task');
+var Task = require('../../src/task').Task;
+
+var task;
 
 
 describe('Task', function(){
