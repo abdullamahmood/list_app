@@ -1,6 +1,6 @@
 var expect = require("chai").expect;
 var sinon = require("sinon");
-var ToDoList = require("../models/toDoList"); //.ToDoList;
+var ToDoList = require("../models/toDoList").ToDoList;
 var ToDoItem = require("../models/toDoItem").ToDoItem;
 var toDoList;
 
