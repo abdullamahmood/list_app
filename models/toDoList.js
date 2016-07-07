@@ -8,12 +8,13 @@
 
   ToDoList.prototype.addTask = function(ToDoItem, taskString) {
     this.tasks.push(new ToDoItem(taskString));
+    console.log(this.tasks)
   };
 
-  ToDoList.prototype.display = function() {
+  ToDoList.prototype.display = function() { debugger;
     var returnString = "<ul>";
-    this.tasks.forEach(function(task) {
-      returnString += ("<li><div>"+task.task+"</div></li>");
+    this.tasks.forEach(function(taskItem) {
+      returnString += ("<li><div>"+taskItem.task+"</div></li>");
     });
     return returnString += "</ul>";
   };

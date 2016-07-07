@@ -8,21 +8,28 @@
 
 <body>
   <div id='list'></div>
-</body>
 
-<form id='addTask' action='/tasks' method='post'>
+ 
+<form id='addTask' action='/tasks/new' method='post'>
   <input id='textInput' type='text' name='task'/>
-  <input id='addButton' type='submit' value='Add Task'/>
+  <input id='addButton' type='submit' value='Add Task' />
 </form>
+
+</body>
 
   <script src='models/toDoItem.js'></script>
   <script src='models/toDoList.js'></script>
   <script src='index.js'></script>
   
   <script>
-
-    
-
+  	// the src= calls above load the objects/methods above making 
+  	// them available globally with in the actual js code & unit 
+  	// tests... BUT not for the feature/Zombie tests...
+  	// Making these available (global) for the feature tests is
+  	// accomplished by wrapping the ToDoList & ToDoItem js code
+  	// in the following: '(function(exports) { ... exports.ToDoList 
+  	// = ToDoList; })(this);'
+  	// Also, can't 'require' js files within othe js files...
   </script>
 
 
